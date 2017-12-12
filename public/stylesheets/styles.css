@@ -1,0 +1,114 @@
+padding: 50px 0 70px 0;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 1.5px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 2px;
+}
+
+/* navbar */
+.navbar-default {
+    background-color: steelblue;
+    border-color: steelblue;
+}
+/* Title */
+.navbar-default .navbar-brand {
+    color: #f8f8ff;
+    letter-spacing: 2px;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #f1f1ff;
+}
+/* Link */
+.navbar-default .navbar-nav > li > a {
+    color: #f8f8ff;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #f1f1ff;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: steelblue;
+    background-color: #f8f8ff;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #f8f8ff;
+    background-color: steelblue;
+}
+.navbar-default .navbar-toggle {
+  border-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff !important;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #000;
+}
+/* End Navbar CSS */
+
+/* Jumbotron CSS */
+.jumbotron {
+  background-color: steelblue;
+  color: #fff;
+  padding-bottom: 45px;
+}
+
+ h1 small {
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 1px;
+}
+
+hr.style-two-jumbo {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+
+.social {
+  display: block;
+  padding-top: 25px;
+  letter-spacing: 5px;
+}
+
+.icon {
+  display: inline;
+  border: 2px solid white;
+  padding: 33px 13px 13px 13px;
+  border-radius: 50%;
+  box-shadow: 0 2px ghostwhite;
+}
+.icon > a {
+  color: #fff;
+}
+
+.icon > a:hover {
+  color: #fff;
+}
+
+/* End Jumbotron CSS */
+
+/* About CSS */
+hr.style-two {
+    width: 33%;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+#aboutImage {
+  border-radius: 50%;
+}
+
+.bg-dark {
+  background-color: gray;
+}
