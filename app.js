@@ -10,7 +10,8 @@ var express        = require("express"),
 require("dotenv").load();
 
 // Requiring routes    
-var indexRoute    = require("./routes/index");
+var indexRoute    = require("./routes/index"),
+    contactRoute  = require("./routes/contact");
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
@@ -37,6 +38,7 @@ app.use(function(req, res, next){
 });
 
 app.use("/", indexRoute);
+app.use(contactRoute);
 
 // this is required for the server to init
 app.listen(process.env.PORT, process.env.IP, function() {

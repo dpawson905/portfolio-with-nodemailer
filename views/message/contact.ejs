@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="/stylesheets/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway:400,700" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'></script>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">My Portfolio</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="https://blog.djpawson.me" target="_blank">Blog</a></li>
+          <li><a href="https://letscamp.life" target="_blank">Let's Camp</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+  <div class="container">
+    <% if(error && error.length > 0) { %>
+      <div class="alert alert-danger alert-dismissible">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+        <%= error %>
+      </div>
+    <% } %>
+    <% if(success && success.length > 0) { %>
+      <div class="alert alert-success alert-dismissible">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+        <%= success %>
+      </div>
+    <% } %>
+  </div>
+  <div class="container">
+    <div id="contact" class="jumbotron contact-header">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="text-center">Contact Form</h2>
+          <hr class="style-two-jumbo">
+          <p class="form-text text-center"><span class="contact-text"></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1 col-xs-8 col-xs-offset-2">
+        <form method="POST" action="/contact/send" id="form">
+			  <div class="messages"></div>
+			  <div class="controls">
+          <div class="form-group">
+            <label class="" for="form_name">Name</label>
+            <input type="text" class="form-control" id="form_name" name="name"  placeholder="Enter Name" required="required" data-error="Your Name is Required">
+            <div class="help-block with-errors"></div>
+          </div>
+          <div class="form-group">
+            <label class="" for="form_phone">Phone</label>
+            <input type="tel" class="form-control" id="form_phone" name="phone" placeholder="Phone" required="required" data-error="Your Phone Number is Required">
+            <div class="help-block with-errors"></div>
+          </div>
+          <div class="form-group">
+            <label class="" for="form_email">Email</label>
+            <input type="email" class="form-control" id="form_email" name="email" placeholder="Your Email Address" required="required" data-error="Your Email is Required">
+            <div class="help-block with-errors"></div>
+          </div>
+          <div class="form-group">
+            <label class="" for="form_message">Message</label>
+            <textarea class="form-control" id="form_message" name="message" placeholder="Enter Message Here" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+            <div class="help-block with-errors"></div>
+          </div>
+          <div class="g-recaptcha form-group" data-sitekey="6LcGpDwUAAAAAPnt4svycSi3zX9gQ03eIRaNul2s"></div>
+          <button type="submit" class="btn btn-primary">Send Email</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer navbar-fixed-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p class="text-center">Proudly Coded by <a href="https://djpawson.me">Darrell Pawson</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/12.1.5/js/smooth-scroll.polyfills.min.js'></script>
+  	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.6/typed.min.js'></script>
+  	<script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
+  	<script src="/js/contactForm.js"></script>
+	</body>
+</html>

@@ -15,7 +15,7 @@
   <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -32,9 +32,9 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#top">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="/contact">Contact</a></li>
           <li><a href="https://blog.djpawson.me" target="_blank">Blog</a></li>
           <li><a href="https://letscamp.life" target="_blank">Let's Camp</a></li>
         </ul>
@@ -55,5 +55,18 @@
       </ul>
     </div>
   </div>
-  <!-- Begin index.ejs container -->
   <div class="container">
+    <% if(error && error.length > 0) { %>
+      <div class="alert alert-danger alert-dismissible">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+        <%= error %>
+      </div>
+    <% } %>
+    <% if(success && success.length > 0) { %>
+      <div class="alert alert-success alert-dismissible">
+        <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+        <%= success %>
+      </div>
+    <% } %>
+  </div>
+  

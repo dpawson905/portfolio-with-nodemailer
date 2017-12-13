@@ -1,12 +1,13 @@
 <% include ./partials/header %>
-
+  <!--About-->
+  <div id="about" class="container-fluid">
     <div class="row">
       <div class="col-md-12">
         <h2 class="text-center">About Me</h2>
         <hr class="style-two">
       </div>
     </div>
-    <div id="about" class="row">
+    <div class="row">
       <div class="col-md-9">
         <p class="lead">
           <span id="hello"></span> my name is Darrell Pawson and I am from Asheboro NC. I have been building websites as a hobby for quite some time now. Not too long ago, I joined
@@ -22,8 +23,35 @@
         </p>
       </div>
       <div class="col-md-3">
-        <img class="img-responsive img-circle center-block" src="https://image.ibb.co/jgODzb/profile_pic.jpg" alt="Darrell Pawson">
+        <img class="img-responsive img-circle center-block slideanim" src="https://image.ibb.co/jgODzb/profile_pic.jpg" alt="Darrell Pawson">
       </div>
     </div>
+  </div>
+  <!--END About-->
+  
+  <!--Portfolio-->
+  <div id="projects" class="container-fluid text-center bg-dark">
+    <div id="portfolio" class="row slideanim">
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="https://djpawson.me/projects/colorGame" target="_blank"><img class="img-responsive" src="/images/colorGame.jpg" alt="RGB Color Game"></a>
+          <p class="caption text-center">RGB Color Game</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="https://app.djpawson.me" target="_blank"><img class="img-responsive" src="https://image.ibb.co/kSe7aG/yelp.jpg" alt="yelpCamp"></a>
+          <p class="caption text-center">YelpCamp</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <img class="img-responsive" src="https://via.placeholder.com/500x318" alt="">
+          <p class="caption text-center">Placeholder for next project</p>
+        </div>
+      </div>
+    </div>
+  </div>    
+  
 
 <% include ./partials/footer %>

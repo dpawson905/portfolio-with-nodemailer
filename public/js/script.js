@@ -33,15 +33,14 @@ $(document).ready(function() {
     typeSpeed: 25,
   });
 
-  // var typed1 = new Typed(".contact-text", {
-  //   strings: [
-  // 		"Feel free to contact me about my services.^1000",
-  // 		"Or, you can contact me directly at (336)302-7348.^1000",
-  // 		"Your information will never be sold to any third parties."
-  // 	 ],
-  //   smartBackspace: true, // Default value
-  //   typeSpeed: 25,
-  //   backSpeed: 30
-  // });
+  $(window).scroll(function () {
+    $(".slideanim").each(function () {
+      var pos    = $(this).offset().top,
+          winTop = $(window).scrollTop();
+      if (pos < winTop + 800) {
+        $(this).addClass("slide");
+      }
+    });
+  });
   
 });
