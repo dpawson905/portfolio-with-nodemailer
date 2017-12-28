@@ -1,57 +1,217 @@
 <% include ./partials/header %>
-  <!--About-->
-  <div id="about" class="container-fluid">
-    <div class="row">
-      <div class="col-md-12">
-        <h2 class="text-center">About Me</h2>
-        <hr class="style-two">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-9">
-        <p class="lead">
-          <span id="hello"></span> my name is Darrell Pawson and I am from Asheboro NC. I have been building websites as a hobby for quite some time now. Not too long ago, I joined
-          <span class="nowrap"><a href="https://www.udemy.com/" target="_blank"> Udemy</a></span> and took a course called The Web Developer Bootcamp and I fell in love with Node.js. In fact this portfolio is built using Node.js, Express and ejs.  
-        </p>
-        <p class="lead">
-          Now, I am not perfect at this nor am I an expert.  I am still a beginner but I am learning and I am loving this.  I am determined to learn as much as I can and get a job in this field
-          so that I can do what I am enjoying on my free time. 
-          
-          <p class="lead">
-            Follow me on my <a href="https://blog.djpawson.me" target="_blank">Blog</a> where I post about what I am working on and well, everything else really.
-          </p>
-        </p>
-      </div>
-      <div class="col-md-3">
-        <img class="img-responsive img-circle center-block slideanim" src="https://image.ibb.co/jgODzb/profile_pic.jpg" alt="Darrell Pawson">
-      </div>
-    </div>
-  </div>
-  <!--END About-->
   
-  <!--Portfolio-->
-  <div id="projects" class="container-fluid text-center bg-dark">
-    <div id="portfolio" class="row slideanim">
-      <div class="col-md-4">
-        <div class="thumbnail">
-          <a href="https://djpawson.me/projects/colorGame" target="_blank"><img class="img-responsive" src="/images/colorGame.jpg" alt="RGB Color Game"></a>
-          <p class="caption text-center">RGB Color Game</p>
+  <section class="bg-primary" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12  text-center">
+            <h2 class="section-heading text-white">About Me</h2>
+            <hr class="light my-4">
+          </div>
+          <div class="col-lg-8">
+            <p class="text-faded mb-4"><span id="hello"></span> my name is Darrell Pawson and I am from Asheboro NC. I have been building websites as a hobby for quite some time now. Not too long ago, I joined <span class="nowrap"><a href="https://www.udemy.com/" target="_blank"> Udemy</a></span>        and took a course called The Web Developer Bootcamp and I fell in love with Node.js. In fact this portfolio is built using Node.js, Express and ejs.</p>
+            <p class="text-faded mb-4">Now, I am not perfect at this nor am I an expert. I am still a beginner but I am learning and I am loving this. I am determined to learn as much as I can and get a job in this field so that I can do what I am enjoying on my free time.</p>
+            <p class="text-faded mb-4">Follow me on my <a href="https://blog.djpawson.me" target="_blank">Blog</a> where I post about what I am working on and well, everything else really. Also, Make sure to check out my work on the projects drop down above.</p>
+          </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="thumbnail">
-          <a href="https://app.djpawson.me" target="_blank"><img class="img-responsive" src="https://image.ibb.co/kSe7aG/yelp.jpg" alt="yelpCamp"></a>
-          <p class="caption text-center">YelpCamp</p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="thumbnail">
-          <img class="img-responsive" src="https://via.placeholder.com/500x318" alt="">
-          <p class="caption text-center">Placeholder for next project</p>
-        </div>
-      </div>
-    </div>
-  </div>    
-  
+    </section>
 
+    <section id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">At Your Service</h2>
+            <hr class="my-4">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-html5 text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">HTML5</h3>
+              <p class="text-muted mb-0">Your site will be designed with the latest HTML standards</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-css3 text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">CSS3</h3>
+              <p class="text-muted mb-0">We only use the latest in CSS standards as well</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-database text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">MongoDB</h3>
+              <p class="text-muted mb-0">MongoDB is our preferred choice for Databases</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <i class="fa fa-4x fa-code text-primary mb-3 sr-icons"></i>
+              <h3 class="mb-3">NodeJS</h3>
+              <p class="text-muted mb-0">We love NodeJS and we think you will too</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="p-0" id="certifications">
+      <div class="container-fluid p-0">
+        <div class="row no-gutters popup-gallery">
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/fullsize/udemy_wdbc1.jpg">
+              <img class="img-fluid" src="img/portfolio/thumbnails/udemy_wdbc1.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Udemy
+                  </div>
+                  <div class="project-name">
+                    Web Developer Bootcamp
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/fullsize/2.jpg">
+              <img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Category
+                  </div>
+                  <div class="project-name">
+                    Certification
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
+              <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Category
+                  </div>
+                  <div class="project-name">
+                    Certification
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/fullsize/coursera_html.jpg">
+              <img class="img-fluid" src="img/portfolio/thumbnails/coursera_html.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Coursera
+                  </div>
+                  <div class="project-name">
+                    HTML, CSS and Javascript
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/fullsize/5.jpg">
+              <img class="img-fluid" src="img/portfolio/thumbnails/5.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Category
+                  </div>
+                  <div class="project-name">
+                    Certification
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="img/portfolio/fullsize/6.jpg">
+              <img class="img-fluid" src="img/portfolio/thumbnails/6.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Category
+                  </div>
+                  <div class="project-name">
+                    Certification
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-dark text-white">
+      <div class="container text-center">
+        <h2 class="mb-4">Contact me</h2>
+        <p>Once I receive your email I typically respond within 24 hours...</p>
+      </div>
+    </section>
+
+    <div id="alert" class="container">
+      <div class="row">
+        <div class="col-12">
+          <% if(error && error.length > 0) { %>
+            <div class="alert alert-danger alert-dismissible">
+              <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+              <%= error %>
+            </div>
+          <% } %>
+          <% if(success && success.length > 0) { %>
+            <div class="alert alert-success alert-dismissible">
+              <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
+              <%= success %>
+            </div>
+          <% } %>
+        </div>
+      </div>
+    </div>
+
+    <section id="contact">
+      <div class="container">
+        <form action="/send" method="post" id="form">
+          <div class="row justify-content-md-center">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="" for="form_name">Name</label>
+                <input type="text" class="form-control" id="form_name" name="name" placeholder="Enter Name" required="required" data-error="Your Name is Required">
+                <div class="help-block with-errors"></div>
+              </div>
+              <div class="form-group">
+                <label class="" for="form_email">Email</label>
+                <input type="email" class="form-control" id="form_email" name="email" placeholder="Your Email Address" required="required" data-error="Your Email is Required">
+                <div class="help-block with-errors"></div>
+              </div>
+              <div class="form-group">
+                <label class="" for="form_message">Message</label>
+                <textarea class="form-control" id="form_message" name="message" placeholder="Enter Message Here" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                <div class="help-block with-errors"></div>
+              </div>
+              <div class="form-group">
+                <div id="captcha" class="g-recaptcha" data-sitekey="6LcGpDwUAAAAAPnt4svycSi3zX9gQ03eIRaNul2s"></div>
+              </div>
+              <div class="form-group">
+                <button class="btn btn-lg btn-primary btn-block">Send Email</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  
 <% include ./partials/footer %>

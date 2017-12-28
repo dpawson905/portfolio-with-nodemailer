@@ -1,72 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My Portfolio</title>
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link type="text/css" rel="stylesheet" href="/stylesheets/styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway:400,700" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'></script>
-  <scritp src="/js/float-panel.js"></scritp>
-  <script src='https://www.google.com/recaptcha/api.js'></script>
-</head>
+  <head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Portfolio Website">
+    <meta name="author" content="Darrell Pawson">
+
+    <title>My Portfolio - Darrell Pawson</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/creative.css" rel="stylesheet">
+    <link href="css/typed.css" rel="stylesheet">
+    <link href="css/font-mfizz.css" rel="stylesheet">
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">My Portfolio</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="#">My Portfolio</a>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#certifications">Certifications</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="https://blog.djpawson.me" target="_blank">Blog</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="colorGame/" target="_blank">RGB Color Game</a>
+                <a class="dropdown-item" href="numberGuess/" target="_blank">Number Guessing Game</a>
+                <a class="dropdown-item" href="rincon/" target="_blank">Rincon Kora</a>
+                <a class="dropdown-item" href="toDoList/" target="_blank">Todo List</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="https://letscamp.life" target="_blank">Let's Camp</a>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
+    </nav>
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="/contact">Contact</a></li>
-          <li><a href="https://blog.djpawson.me" target="_blank">Blog</a></li>
-          <li><a href="https://letscamp.life" target="_blank">Let's Camp</a></li>
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-  </nav>
-  <div class="jumbotron">
-    <div class="container">
-      <div class="page-heading">
-        <h1 class="text-center">Darrell Pawson <small><span class="about-text"></span></small></h1>
-        <hr class="style-two-jumbo">
+    <header class="masthead text-center text-white d-flex">
+      <div class="container my-auto">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h1 class="text-uppercase">
+              <strong>Darrell Pawson</strong>
+            </h1>
+            <hr>
+          </div>
+          <div class="col-lg-8 mx-auto">
+            <p class="text-faded mb-5"><span class="about-text"></span></p>
+            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+          </div>
+        </div>
       </div>
-      <ul class="text-center social list-unstyled">
-        <li class="icon"><a href="https://github.com/dpawson905"><i class="fab fa-github-square fa-3x"></i></a></li>
-        <li class="icon"><a href="https://facebook.com/darrell.pawson"><i class="fab fa-facebook-square fa-3x"></i></a></li>
-        <li class="icon"><i class="fab fa-twitter-square fa-3x"></i></li>
-        <li class="icon"><i class="fab fa-linkedin fa-3x"></i></li>
-      </ul>
-    </div>
-  </div>
-  <div class="container">
-    <% if(error && error.length > 0) { %>
-      <div class="alert alert-danger alert-dismissible">
-        <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
-        <%= error %>
-      </div>
-    <% } %>
-    <% if(success && success.length > 0) { %>
-      <div class="alert alert-success alert-dismissible">
-        <a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
-        <%= success %>
-      </div>
-    <% } %>
-  </div>
+    </header>
+    
+    
   

@@ -4,15 +4,14 @@ var express        = require("express"),
     flash          = require("connect-flash"),
     cookieParser   = require("cookie-parser"),
     helmet         = require("helmet"),
-    nodemailer     = require("nodemailer"),
     session        = require("express-session");
+    
 // config dotenv
 require("dotenv").load();
 
 // Requiring routes    
-var indexRoute    = require("./routes/index"),
-    contactRoute  = require("./routes/contact");
-
+var indexRoute    = require("./routes/index");
+    
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 app.use(helmet());
@@ -23,6 +22,10 @@ app.use(express.static(__dirname + "/public"));
 app.use(express.static(__dirname + "/projects"));
 app.use(express.static(__dirname + "/node_modules"));
 app.use(flash());
+app.use(function(req, res, next) {
+   res.locals.messages = require("express-messages")(req,res);
+   next();
+});
 app.use(cookieParser());
 
 app.use(session({
@@ -38,7 +41,7 @@ app.use(function(req, res, next){
 });
 
 app.use("/", indexRoute);
-app.use(contactRoute);
+
 
 // this is required for the server to init
 app.listen(process.env.PORT, process.env.IP, function() {
