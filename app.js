@@ -9,6 +9,8 @@ var express        = require("express"),
 // config dotenv
 require("dotenv").load();
 
+var port = process.env.PORT || 3000;
+
 // Requiring routes    
 var indexRoute    = require("./routes/index");
     
@@ -44,6 +46,6 @@ app.use("/", indexRoute);
 
 
 // this is required for the server to init
-app.listen(process.env.PORT, process.env.IP, function() {
+app.listen(port, process.env.IP, function() {
     console.log("Web app has started!");
 });
